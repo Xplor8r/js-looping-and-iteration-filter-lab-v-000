@@ -1,13 +1,13 @@
 // Code your solution in this file
-function findMatching (list, name) {
-  return list.filter(function (driver) { return driver.toLowerCase() === name.toLowerCase();} );
+function findMatching (drivers, name) {
+  return drivers.filter(function (driver) { return driver.toLowerCase() === name.toLowerCase();} );
 }
 
-function fuzzyMatch (list, includes) {
+function fuzzyMatch (drivers, includes) {
   let length = includes.length;
-  return list.filter(function (driver) { return driver.slice(0, length) === includes;} );
+  return drivers.filter(function (driver) { return driver.slice(0, length) === includes;} );
 }
 
-function matchName (list, name) {
-  return list.filter(function (driver) { return driver.name.toLowerCase() === name.toLowerCase();} );
+function matchName (drivers, name) {
+  return drivers.filter(function (driver) { return driver.name.toLowerCase() === name.toLowerCase();} );
 }
