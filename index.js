@@ -3,9 +3,9 @@ function findMatching (drivers, name) {
   return drivers.filter(function (driver) { return driver.toLowerCase() === name.toLowerCase();} );
 }
 
-function fuzzyMatch (drivers, includes) {
-  let length = includes.length;
-  return drivers.filter(function (driver) { return driver.slice(0, length) === includes;} );
+function fuzzyMatch (drivers, included) {
+  let length = included.length;
+  return drivers.filter(function (driver) { return driver.slice(0, length) === included;} );
 }
 
 function matchName (drivers, name) {
