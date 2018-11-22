@@ -9,7 +9,5 @@ function fuzzyMatch (list, includes) {
 }
 
 function matchName (list, name) {
-  return list.filter(function (driver) {
-    return driver.name.toLowerCase() === name.toLowerCase();
-  });
+  return list.filter(function (driver) { return driver.name.toLowerCase() === name.toLowerCase();} );
 }
